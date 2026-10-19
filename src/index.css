@@ -56,7 +56,23 @@ button {
 }
 
 .is-focal .artwork-stage {
-  transform: scale(2);
+  transform: scale(2.4);
+}
+
+.zoom-hint {
+  position: absolute;
+  top: 3.5vh;
+  left: 50%;
+  z-index: 4;
+  margin: 0;
+  transform: translateX(-50%);
+  color: #8a8a8a;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
 }
 
 .artwork-position {
@@ -133,10 +149,12 @@ button {
 
 .is-left-open .fold-panel-left {
   transform: rotateY(-180deg);
+  clip-path: inset(15.4% 0 0);
 }
 
 .is-right-open .fold-panel-right {
   transform: rotateY(180deg);
+  clip-path: inset(15.4% 0 0);
 }
 
 .panel-face {

@@ -125,6 +125,8 @@ export default function App() {
       onPointerCancel={stopFocal}
       onContextMenu={(event) => event.preventDefault()}
     >
+      <p className="zoom-hint">Zoom - Right Click</p>
+
       <section className="artwork-stage" aria-label="Mercado de Abasto Proveedor">
         <div className="artwork-position">
           <div className="artwork-flipper">
